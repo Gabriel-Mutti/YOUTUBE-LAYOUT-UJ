@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/*NAV*/
+.navbar {
+    height: 70px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo > img {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 150px;
+}
+
+.procbar {
+    font-size: 23px;
+    margin-right: 100px;
+}
+
+.procbar > i {
+    cursor: pointer;
+    position: relative;
+    right: 10px;
+    top: 4px;
+    padding: 5px;
+    background-color: #c9c9c9;
+    height: 37px;
+    width: 40px;
+    border: solid 2px;
+    border-left: none;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+#procbartext {
+    padding: 10px;
+    border-radius: 20px;
+    border-bottom: solid 2px rgb(0, 0, 0);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 600px;
+    height: 37px;
+}
+
+.fazlog {
+    align-items: center;
+    font-size: 22px;
+    padding: 10px 10px 6px 10px;
+    display: flex;
+    flex-flow: row;
+    cursor: pointer;
+    border: solid 1px;
+    border-radius: 20px;
+    gap: 7px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+}
+
+.fazlog > p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fazlog:hover {
+    border: none;
+    background-color: #c9c9c9;
+}
+
+/*GERAL*/
+.bodyconteiner {
+    margin: 20px 100px 0 100px;
+}
+
+.bodyconteinerarea {
+    display: flex;
+    gap: 20px;
+}
+
+/*BODY*/
+.bodybar {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.videobar {
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+    height: 700px;
+    background-color: #000000;
+    margin-bottom: 15px;
+}
+
+.video > img {
+    height: 700px;
+    width: 1304px;
+}
+
+.videott {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 4px;
+}
+
+.videoinfbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.canalbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.fotocanalbar {
+    margin-right: 5px;
+}
+.fotocanalbar > img {
+    border-radius: 50px;
+}
+
+.nomecanalbar {
+    font-size: 18px;
+}
+.nomecanalbar > p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+}
+
+.likebar {
+    display: flex;
+    gap: 10px;
+}
+
+.buttonlike {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonlike:hover {
+    background-color: #c9c9c9;
+}
+
+.buttoninscrev {
+    margin-right: 580px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.buttoninscrev:hover {
+    background-color: #c9c9c9;
+}
+.buttoninscrev > p {
+    color: white;
+}
+.descbar {
+    background-color: #ebebeb;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.descbarh5 {
+    display: flex;
+    flex-flow: row wrap;
+}
+.descbarh51{
+    margin-left: 10px;
+}
+.descbarp {
+    margin-top: 10px;
+}
+.descbarpmais {
+    display: flex;
+    flex-flow: row wrap;
+}
+.descbarpmais1 {
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+/*COMENTÁRIOS*/
+.comentariobarnavbar {
+    margin-top: 40px;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.comentariobarbodybar {
+    display: flex;
+}
+
+.comenttext {
+    display: flex;
+    flex-flow: row;
+    gap: 18px;
+}
+
+.comenttext > i {
+    font-size: 35px;
+}
+
+.comenttext > textarea {
+    width: 1250px;
+    resize: none;
+}
+
+/*SIDEBAR*/
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sugestaovideo {
+    display: flex;
+    gap: 5px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.sugestaovideo:hover {
+    background-color: #f0f0f0;
+}
+
+.sugestaovideo > img {
+    width: 150px;
+    height: 100px;
+    border-radius: 6px;
+}
+
+.sugestaovideoinfbar {
+    flex: 1;
+    padding: 10px;
+}
+
+.sugestaovideott {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.sugestaovideonomecanal {
+    color: #666;
+    font-size: 15px;
+}
+.sugestaovideonomecanal > h4 {
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.sugestaovideovizu {
+    gap: 10px;
+    margin-top: 5px;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #666;
+}
